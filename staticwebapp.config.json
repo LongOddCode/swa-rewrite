@@ -2,5 +2,20 @@
   "navigationFallback": {
     "rewrite": "/src/404.html",
     "exclude": ["/api/*"]
+  },
+  "routes": [
+    {
+      "route": "/404",
+      "rewrite": "/src/404.html"
+    },
+    {
+      "route": "/about",
+      "rewrite": "/src/about.html"
+    }
+  ],
+  "mimeTypes": {
+    ".html": "text/html",
+    ".css": "text/css",
+    ".js": "application/javascript"
   }
 }
