@@ -1,21 +1,17 @@
 {
   "navigationFallback": {
-    "rewrite": "/src/404.html",
-    "exclude": ["/api/*"]
+    "rewrite": "/index.html",
+    "exclude": ["/about.html", "/404.html"]
   },
   "routes": [
     {
-      "route": "/404",
-      "rewrite": "/src/404.html"
-    },
-    {
       "route": "/about",
-      "rewrite": "/src/about.html"
+      "rewrite": "/about.html"
     }
   ],
-  "mimeTypes": {
-    ".html": "text/html",
-    ".css": "text/css",
-    ".js": "application/javascript"
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
   }
 }
