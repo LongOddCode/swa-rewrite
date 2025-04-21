@@ -1,0 +1,6 @@
+{
+  "navigationFallback": {
+    "rewrite": "/src/404.html",
+    "exclude": ["/api/*"]
+  }
+}
