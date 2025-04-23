@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "route": "/about",
+      "rewrite": "/about.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
+}
